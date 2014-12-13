@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
         redirect_back_or allpicks_path
 
 	else
-      flash[:danger].now = 'Invalid name' # Not quite right!
+      flash.now[:danger]= 'Invalid name' # Not quite right!
       render 'new'
     end
   end
