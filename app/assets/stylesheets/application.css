@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+td
+{
+	padding:10px;
+}
+.smallTF
+{
+	width:20px;
+	text-align: center;
+}
+.medTF
+{
+	width:50px;
+	text-align: center;
+}

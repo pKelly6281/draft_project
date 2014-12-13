@@ -40,10 +40,14 @@ class PicksController < ApplicationController
     def last_round
       last_pick = Pick.order("created_at").last
       last_round = last_pick.round
+      if(last_round == nil)
+        last_round =1
     end
     def last_pick
         last_pick = Pick.order("created_at").last
         l_pick = last_pick.pick
+        if (l_pick == nil)
+          l_pick =1
     end
     def next_team (pickNum,roundNum)
       oddTeam = ["Team 1","Team 2","Team 3","Team 4","Team 5"]

@@ -1,6 +1,13 @@
 <h1>The Draft</h1>
-<%= link_to "Add Pick", addpick_path %>
-<ul class="picks">
+<%= link_to "Add Pick", addpick_path unless @round >=25 and @pickNumber>=5%>
+<table class="picks">
+	<tr>
+		<th>Round</th>
+		<th>Pick</th>
+		<th>User</th>
+		<th>Team</th>
+		<th>Player</th>
+	<tr>
   <%= render @picks %>
-</ul>
-<%= link_to "Add Pick", addpick_path %>
+</table>
+<%= link_to "Add Pick", addpick_path unless @round >=25 and @pickNumber>=5%>
