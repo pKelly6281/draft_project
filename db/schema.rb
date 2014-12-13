@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209150940) do
+ActiveRecord::Schema.define(version: 20141209153910) do
 
   create_table "picks", force: true do |t|
     t.integer  "round"
@@ -28,5 +28,7 @@ ActiveRecord::Schema.define(version: 20141209150940) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "users", ["name"], name: "index_users_on_name", unique: true
 
 end

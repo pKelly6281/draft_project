@@ -3,5 +3,6 @@ class PicksController < ApplicationController
   end
 
   def index
+  	@picks = Pick.All
   end
 end
