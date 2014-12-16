@@ -11,7 +11,7 @@ class PicksController < ApplicationController
     if(@pickNumber == 5)
         @round +=1
         @pickNumber=1
-    else
+    elsif @pickNumber !=1
         @pickNumber+=1
     end
     @team = next_team(@pickNumber, @round)

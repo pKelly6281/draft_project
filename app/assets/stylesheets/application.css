@@ -1,3 +1,5 @@
+@import "bootstrap-sprokects";
+@import "bootstrap";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -16,6 +18,7 @@
 td
 {
 	padding:10px;
+	text-align: center;
 }
 .smallTF
 {
@@ -26,4 +29,13 @@ td
 {
 	width:50px;
 	text-align: center;
+}
+div
+{
+	text-align: center;
+}
+table
+{
+	margin-right:auto;
+	margin-left:auto;
 }
